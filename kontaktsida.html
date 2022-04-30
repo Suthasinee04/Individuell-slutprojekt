@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Industriella revolution</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="projekt.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="ININDEX.html">Startsida</a></li>
+                <li><a href="Faktasida.html">Faktasida</a></li>
+                <li><a href="Sammanfattning.html">Sammanfattning</a></li>
+                <li><a href="kontaktsida.html"> Kontakt</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Kontakt</h1>
+        </header>
+        <main>
+            <p>Denna sidan är till för att kunna kontakta oss och vi kontaktar dig</p>
+            <form action="contact.php" method="post"> <!--Formulär koden fick jag hjälp från läroboken-->
+                <fieldset>
+                    <legend>Vem är du?</legend>
+                    <p>
+                        <label for="uname">Namn:</label>
+                        <label for="uname" class="reqfield">
+                            <strong class="required" title="Obligatorisk uppgift">*</strong>
+                        </label>
+                        <input type="text" name="uname" id="uname" required placeholder="Förnamn Efternamn"/>
+                    </p>
+                    <p> 
+                    <label for="umail">Mejladress</label>
+                    <label for="umail" class="reqfield">
+                        <strong class="required" title="Obligatorisk uppgift">*</strong>
+                    </label>
+                    <input type="email" name="umail" id="umail" required placeholder="foo@bar.com"/>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Meddelande</legend>
+                    <p>
+                        <label for="mmessage">Text:</label>
+                        <label for="mmessage" class="reqfield">
+                            <strong class="required" title="Obligatorisk uppgift">*</strong>
+                        </label>
+                        <textarea id="mmessage" name="mmessage" required placeholder="Skriv ditt meddelande. Minst 25 tecken"></textarea> 
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <p>
+                        <input value="skicka" type="submit"/>
+                    </p>
+                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
+                </fieldset>
+            </form>
+        </main>
+        <footer class="footer"> <!--Här startar footer som innehåller kontakt information och hälsning-->
+            <p>TACK för besöket!</p>
+        </footer><!--Här avslutar footer-->
+    </body>
+</html>

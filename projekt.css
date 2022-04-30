@@ -1,0 +1,106 @@
+body{
+    border-radius: 10%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-align: center;
+    background-color: #C6AC84;
+}
+
+/*Rör till endast navigationsmeny*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline;
+    list-style-type: none;
+    padding: 0 55px 0 0;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+}
+a:link{ /*obesöka länkar*/
+    color:#d16d15;
+}
+a:visited{ /*besökta länkar*/
+    color: #8b4513;
+}
+a:hover{ /*när musen penkar på länken*/
+    color: rgb(168, 151, 76);
+    text-decoration: underline;
+}
+a:active{ /*länken man väljer*/
+    color: rgb(231, 71, 8);
+}
+/*Här avslutar endast navigationsmeny kod*/
+
+#industri img{
+    width: 450px;
+}
+#industri tr:nth-child(odd){/*Avviker färg från body i andra sidor men färg nummer liknar varandra ganska mycket*/
+    background-color: rgb(211, 190, 167);
+}
+#industri tr:nth-child(even){
+    background-color: rgb(233, 198, 155);
+}
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+tr{
+    border: 1px solid lightgoldenrodyellow;
+}                
+}
+nav, footer{ 
+    background-color: #EBD8B7;
+    border: burlywood;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+iframe{ /*css till min youtube video*/
+    width: 600;
+    height: 350;
+    border: 0;
+}
+
+/*Här är css till kontakt formulär*/
+fieldset{
+    padding: 1em;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+legend{
+    font-size: larger;
+}
+form p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+label{
+    flex: 0 1 10ch;
+    text-align: right;
+    padding-right: 1ch;
+}
+.reqfield{
+    flex: 0 0 2ch;
+    order: 1;
+}
+input[type=text],
+input[type=email],
+textarea {
+    flex: 1 1 25ch;
+    max-width: 400px;
+}
+textarea{
+    height: 6em;
+    resize: vertical;
+}
+input[type="submit"]{
+    display: block;
+    margin: auto;
+}
