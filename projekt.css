@@ -35,6 +35,12 @@ a:active{ /*länken man väljer*/
 }
 /*Här avslutar endast navigationsmeny kod*/
 
+nav, footer{ 
+    background-color: #EBD8B7;
+    border: burlywood;
+    border-radius: 20px;
+    padding: 15px;
+}
 #industri img{
     width: 450px;
 }
@@ -44,27 +50,28 @@ a:active{ /*länken man väljer*/
 #industri tr:nth-child(even){
     background-color: rgb(233, 198, 155);
 }
-
 table{
-    border-spacing: 0;
     border-collapse: collapse;
+    border-spacing: 0;
     width: 100%;
 }
 tr{
     border: 1px solid lightgoldenrodyellow;
 }                
-}
-nav, footer{ 
-    background-color: #EBD8B7;
-    border: burlywood;
-    border-radius: 20px;
-    padding: 15px;
-}
 
 iframe{ /*css till min youtube video*/
-    width: 600;
-    height: 350;
     border: 0;
+    display: block;
+    height: 300px;
+    width: 500px;
+}
+.container{ /*css till min sammanfattningssida*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container2{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 }
 
 /*Här är css till kontakt formulär*/
