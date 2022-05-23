@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Ingen valideringsfel-->
 <html lang="sv">
     <head>
         <title>Industriella revolution</title>
@@ -47,22 +47,20 @@
                         </label>
                         <textarea id="mmessage" name="mmessage" required placeholder="Skriv ditt meddelande. Minst 25 tecken"></textarea> 
                     </p>
-                </fieldset>
-                <p> Jag är inte en robot 
-                    <input type="checkbox">
-                    Jag accepterar användarens vilkor
-                    <input type="radio"> 
-                </p>
-                <fieldset>
                     <p>
-                        <input value="skicka" type="submit"/> <!--Knappen "skicka" i formulär-->
+                        Jag är inte en robot
+                        <input type="checkbox" name="ej robot">
+                        Jag accepterar användar vilkor
+                        <input type="radio" name="vilkor" required>
+                        <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
+                        password
+                        <input type="password" id="pwd"> <br>
                     </p>
-                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
                 </fieldset>
+                <p>
+                    <input value="skicka" type="submit"/> <!--Knappen "skicka" i formulär-->
+                </p>    
             </form>
-            <label for="password">Password:</label>
-            <input type="password" id="pwd"> <br>
-        
         </main>
         <footer> <!--Här startar footer som innehåller kontakt information och hälsning-->
             <p>TACK för besöket!</p>
