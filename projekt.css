@@ -2,18 +2,20 @@ body{
     border-radius: 10%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     text-align: center;
-    background-color: #C6AC84;
+    background-color: #c6ac83;
 }
-
 /*Rör till endast navigationsmeny*/
+nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 ul{
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 li{
     display: inline;
-    list-style-type: none;
     padding: 0 55px 0 0;
 }
 a{
@@ -24,7 +26,7 @@ a:link{ /*obesöka länkar*/
     color:#d16d15;
 }
 a:visited{ /*besökta länkar*/
-    color: #8b4513;
+    color: #8b4513; 
 }
 a:hover{ /*när musen penkar på länken*/
     color: rgb(168, 151, 76);
@@ -36,11 +38,12 @@ a:active{ /*länken man väljer*/
 /*Här avslutar endast navigationsmeny kod*/
 
 nav, footer{ 
-    background-color: #EBD8B7;
+    background-color: #ebd8b7;
     border: burlywood;
     border-radius: 20px;
     padding: 15px;
 }
+
 #industri img{
     width: 450px;
 }
