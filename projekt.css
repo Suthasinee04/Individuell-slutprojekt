@@ -5,16 +5,17 @@ body{
     background-color: #c6ac83;
 }
 /*Rör till endast navigationsmeny*/
+
 nav{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-ul{
+nav > ul{ /*Denna är en barnselektor*/
     margin: 0;
     padding: 0;
 }
-li{
+nav li{
     display: inline;
     padding: 0 55px 0 0;
 }
@@ -47,10 +48,10 @@ nav, footer{
 #industri img{
     width: 450px;
 }
-#industri tr:nth-child(odd){/*Avviker färg från body i andra sidor men färg nummer liknar varandra ganska mycket*/
+#industri tr:nth-child(odd){/*Avviker färg från body i andra sidor men färg nummer liknar varandra ganska mycket och att det är en avkomma*/
     background-color: rgb(211, 190, 167);
 }
-#industri tr:nth-child(even){
+#industri tr:nth-child(even){ /*Avkomma*/
     background-color: rgb(233, 198, 155);
 }
 table{
@@ -68,7 +69,7 @@ iframe{ /*css till min youtube video*/
     height: 300px;
     width: 500px;
 }
-.container{ /*css till min sammanfattningssida*/
+.container{ /*css till min sammanfattningssida*/ 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
