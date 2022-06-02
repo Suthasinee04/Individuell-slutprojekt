@@ -4,6 +4,11 @@ body{
     text-align: center;
     background-color: #c6ac83;
 }
+h1::first-letter{ /*Bara en liten deklaration i första bokstaven av <h1>*/
+    text-decoration: underline;
+    color: rgb(97, 81, 45);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 /*Rör till endast navigationsmeny*/
 
 nav{

@@ -20,7 +20,7 @@
         </header>
         <main>
             <p>Denna sidan är till för att kunna kontakta oss och ni kan gärna delar er åsikt om vår sida samt revolutionen!</p>
-            <form action="contact.php" method="post"> <!--Formulär koden fick jag hjälp från läroboken-->
+            <form action="tack.jpg" method="post"> <!--Formulär koden fick jag hjälp från läroboken-->
                 <fieldset>
                     <legend>Vem är du?</legend>
                     <p>
@@ -47,20 +47,40 @@
                         </label>
                         <textarea id="mmessage" name="mmessage" required placeholder="Skriv ditt meddelande. Minst 25 tecken"></textarea> 
                     </p>
-                    <p>
-                        Jag är inte en robot
-                        <input type="checkbox" name="ej robot">
-                        Jag accepterar användar vilkor
-                        <input type="radio" name="vilkor" required>
-                        <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
-                        password
-                        <input type="password" id="pwd"> <br>
-                    </p>
+                </fieldset>
+                <fieldset> 
+                    <legend>Gillar du?</legend>
+                        <p>
+                            <label for="historie">Jag gillar historie</label>
+                            <input type="checkbox" name="Historia" id="historie">
+                            <label for="historie2">Jag gillar historie JÄTTEMYCKET!!</label>
+                            <input type="checkbox" name="Mycket historia" id="historie2">
+                        </p>
+                </fieldset>
+                <fieldset>
+                    <legend> Är du bra på?</legend>
+                        <p>
+                            <label for="årtal">Årtal</label>
+                            <input type="radio" name="årtal" value="årtal" id="årtal">
+                            <label for="händelse">Händelse</label>
+                            <input type="radio" name="händelse" value="händelse" id="händelse">
+                        </p>
+                </fieldset>
+                <fieldset> 
+                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
+                    password
+                    <input type="password" id="pwd"> <br>
                 </fieldset>
                 <p>
                     <input value="skicka" type="submit"/> <!--Knappen "skicka" i formulär-->
                 </p>    
             </form>
+
+
+
+
+
+
         </main>
         <footer> <!--Här startar footer som innehåller kontakt information och hälsning-->
             <p>TACK för besöket!</p>
