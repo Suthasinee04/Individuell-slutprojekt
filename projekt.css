@@ -1,22 +1,25 @@
 body{
-    border-radius: 10%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    text-align: center;
     background-color: #c6ac83;
+    border-radius: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+@media screen and (min-width: 500px) { 
+    body{ 
+        background-color: #c6ac83;}
 }
 h1::first-letter{ /*Bara en liten deklaration i första bokstaven av <h1>*/
-    text-decoration: underline;
     color: rgb(97, 81, 45);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
 }
 /*Rör till endast navigationsmeny*/
-
 nav{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-nav > ul{ /*Denna är en barnselektor*/
+nav > ul{ /*Denna är en barnselektor som ledder till att ul i sidan källor ska visas i order*/
     margin: 0;
     padding: 0;
 }
@@ -25,8 +28,8 @@ nav li{
     padding: 0 55px 0 0;
 }
 a{
-    text-decoration: none;
     font-size: 25px;
+    text-decoration: none;
 }
 a:link{ /*obesöka länkar*/
     color:#d16d15;
@@ -35,11 +38,12 @@ a:visited{ /*besökta länkar*/
     color: #8b4513; 
 }
 a:hover{ /*när musen penkar på länken*/
-    color: rgb(168, 151, 76);
+    color: hsl(47, 51%, 28%);
+    font-weight: bold; 
     text-decoration: underline;
 }
 a:active{ /*länken man väljer*/
-    color: rgb(231, 71, 8);
+    color: hsl(7, 54%, 59%);
 }
 /*Här avslutar endast navigationsmeny kod*/
 
@@ -49,7 +53,6 @@ nav, footer{
     border-radius: 20px;
     padding: 15px;
 }
-
 #industri img{
     width: 450px;
 }
@@ -67,12 +70,14 @@ table{
 tr{
     border: 1px solid lightgoldenrodyellow;
 }                
-
 iframe{ /*css till min youtube video*/
     border: 0;
     display: block;
     height: 300px;
     width: 500px;
+}
+iframe:hover { /*Denna css koden fungerar på samma i nav då muspekaren gör att videon från Youtube blir större*/
+    transform: scale(1.5);
 }
 .container{ /*css till min sammanfattningssida*/ 
     display: grid;
@@ -82,8 +87,12 @@ iframe{ /*css till min youtube video*/
     display: grid;
     grid-template-columns: 2fr 2fr;
 }
-
-/*Här är css till kontakt formulär*/
+svg{ /*Här är design (bland annat färger)till svg i html*/
+    fill: hsl(33, 16%, 89%);
+    stroke: hsl(34, 36%, 54%); 
+    stroke-width: 1em; 
+}
+/*Här är css till kontakt formulär samt inloggningssida*/
 fieldset{
     padding: 1em;
     border-radius: 20px;
@@ -118,5 +127,5 @@ textarea{
 }
 input[type="submit"]{
     display: block;
-    margin: auto;
+    margin: auto; 
 }

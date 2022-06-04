@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!--Ingen valideringsfel-->
+<html lang="sv">
+    <head>
+        <title>Industriella revolution</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="projekt.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Startsida</a></li>
+                <li><a href="Faktasida.html">Faktasida</a></li>
+                <li><a href="Sammanfattning.html">Sammanfattning</a></li>
+                <li><a href="kontaktsida.html"> Kontakt</a></li>
+                <li><a href="logga.html">Logga in</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Logga in</h1>
+        </header>
+        <main>
+            <form action="valkommen.gif" method="post">
+                <fieldset> 
+                    <legend>Inloggning</legend>
+                    <label for="an">Användarnamn:</label>
+                    <input name="användarnamn" id="an" required />
+                   
+                    <label for="pwd">Lösenord:</label>
+                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden"> <!--Medan man skriver lösenorden ska man kunna välja mellan vara synlig eller osynlig-->
+                    <input type="password" id="pwd"> <br>
+                </fieldset>
+                <p>
+                    <input value="logga in " type="submit"/> <!--Knappen "logga in"-->
+                </p>    
+            </form>
+        </main>
+        <footer> <!--Här startar footer som innehåller kontakt information och hälsning-->
+            <p>TACK för besöket!</p>
+        </footer><!--Här avslutar footer-->
+    </body>
+</html>

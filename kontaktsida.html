@@ -13,6 +13,7 @@
                 <li><a href="Faktasida.html">Faktasida</a></li>
                 <li><a href="Sammanfattning.html">Sammanfattning</a></li>
                 <li><a href="kontaktsida.html"> Kontakt</a></li>
+                <li><a href="logga.html">Logga in</a></li>
             </ul>
         </nav>
         <header>
@@ -49,38 +50,39 @@
                     </p>
                 </fieldset>
                 <fieldset> 
-                    <legend>Gillar du?</legend>
-                        <p>
-                            <label for="historie">Jag gillar historie</label>
-                            <input type="checkbox" name="Historia" id="historie">
-                            <label for="historie2">Jag gillar historie JÄTTEMYCKET!!</label>
-                            <input type="checkbox" name="Mycket historia" id="historie2">
-                        </p>
+                    <legend>Har du lärt dig något?</legend>
+                    <p>
+                        <label for="revolution">Jag har lärt mig lite mer fakta om revolutionen</label>
+                        <input type="checkbox" name="revolutionen" id="revolution">
+                    </p>
+                    <p>
+                        <label for="uppfinning">Jag har sett vilka uppfinningar som kom under revolutionen</label>
+                        <input type="checkbox" name="uppfinningar" id="uppfinning">
+                    </p>
+                    <p>
+                        <label for="värld">Jag har förstått hur revolution har påverkat vår värld</label>
+                        <input type="checkbox" name="världen" id="värld">
+                    </p>   
                 </fieldset>
                 <fieldset>
-                    <legend> Är du bra på?</legend>
-                        <p>
-                            <label for="årtal">Årtal</label>
-                            <input type="radio" name="årtal" value="årtal" id="årtal">
-                            <label for="händelse">Händelse</label>
-                            <input type="radio" name="händelse" value="händelse" id="händelse">
-                        </p>
-                </fieldset>
-                <fieldset> 
-                    <input name="prevent_multiple_submits" value="{$random_string}" type="hidden">
-                    password
-                    <input type="password" id="pwd"> <br>
+                    <legend> Är du bra på historien?</legend>
+                    <p>
+                        <label for="super">Ja, jag är superbra på historia</label>
+                        <input type="radio" name="historia" value="super" id="super">
+                    </p>
+                    <p> 
+                        <label for="sådär">Jag kan och är på lagom nivå</label>
+                        <input type="radio" name="historia" value="sådär" id="sådär">
+                    </p>
+                    <p>
+                        <label for="inte">Jag är inte alls bra</label>
+                        <input type="radio" name="historia" value="inte" id="inte">
+                    </p>
                 </fieldset>
                 <p>
                     <input value="skicka" type="submit"/> <!--Knappen "skicka" i formulär-->
                 </p>    
             </form>
-
-
-
-
-
-
         </main>
         <footer> <!--Här startar footer som innehåller kontakt information och hälsning-->
             <p>TACK för besöket!</p>
